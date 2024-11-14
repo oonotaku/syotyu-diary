@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="top">
+        <h1 id=""main-title>焼酎日記</h1>
+        <div class="date-title-container">
+            <label for="date">日付</label>
+            <input type="date" id="drunk-day">
+            <label for="theme">表題</label>
+            <input type="text" id="theme" placeholder="表題を入力">
+        </div>
+    </div>
+
+    <textarea id="topic" placeholder="最大50文字まで入力できます"></textarea>
+    <p id="charCount">残り<span id="remainingChars">50</span>文字</p>
+    <input type="file"  id="camerainput"   accept="image/*" capture="environment" style="display:none" >
+    <button id="cameraButton">画像を選択</button>
+    <!-- -->
+     <div id="image" ></div>
+
+
+    <div class="button-area">
+        <button id="save">セーブ</button>
+        <button id="clear">全て削除</button>
+    </div>
+    
+    <ul id="list">
+        <!-- ここに追加データが挿入される -->
+    </ul>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="./js/main.js"></script> 
+</body>
+</html>
